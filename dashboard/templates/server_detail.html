@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ guild.name }} - SkillSparkHub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>SkillSparkHub</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="{{ url_for('home') }}">🏠 Home</a></li>
+            <li><a href="{{ url_for('commands') }}">⚙️ Commands</a></li>
+            <li><a href="{{ url_for('moderation') }}">🛡️ Moderation</a></li>
+            <li class="active"><a href="{{ url_for('servers') }}">🌐 Servers</a></li>
+            <li><a href="{{ url_for('user_page') }}">👤 Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>{{ guild.name }}</h1>
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="user-avatar">
+                <span>{{ user.username }}</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="server-details-grid">
+                <div class="server-detail-card">
+                    <h3>Text Channels</h3>
+                    <div class="channel-list">
+                        {% for channel in channels %}
+                        {% if channel.type == 0 %}
+                        <div class="channel-item">
+                            <span class="channel-icon">#</span>
+                            <span class="channel-name">{{ channel.name }}</span>
+                            <span class="channel-id">{{ channel.id }}</span>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="server-detail-card">
+                    <h3>Voice Channels</h3>
+                    <div class="channel-list">
+                        {% for channel in channels %}
+                        {% if channel.type == 2 %}
+                        <div class="channel-item">
+                            <span class="channel-icon">🔊</span>
+                            <span class="channel-name">{{ channel.name }}</span>
+                            <span class="channel-id">{{ channel.id }}</span>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="server-detail-card">
+                    <h3>Roles</h3>
+                    <div class="role-list">
+                        {% for role in roles %}
+                        <div class="role-item">
+                            <span class="role-color" style="background-color: #{{ '%06x' % role.color }};"></span>
+                            <span class="role-name">{{ role.name }}</span>
+                            <span class="role-id">{{ role.id }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-link">
+                <a href="{{ url_for('servers') }}" class="back-btn">← Back to Servers</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

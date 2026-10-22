@@ -1,0 +1,97 @@
+I already have a working Discord bot inside my Replit project named “SkillSparkHub”.
+I want you to generate a fully integrated dashboard system for my existing bot, so it uses its existing structure and files without breaking its logic.
+
+Dashboard Requirements
+
+Use Flask alongside the Discord bot to run in the same project.
+
+Implement Discord OAuth2 Login (scopes: identify, guilds) to restrict access.
+
+After login, show the user’s avatar and username, and only allow access if the user is an admin in a server where the bot is present.
+
+The dashboard should list only the guilds (servers) where the bot is a member and the logged-in user has permissions (e.g., MANAGE_GUILD).
+
+
+Pages
+
+1. Home Page
+
+Show bot’s name, avatar, ID, status (online/offline).
+
+Show global stats: number of servers bot is in, total users, uptime.
+
+Show logged-in user profile.
+
+
+
+2. Commands Page
+
+Automatically read from your bot’s existing commands file/structure (for example commands.json or wherever your bot stores commands).
+
+Display each command, allow toggling (enable/disable).
+
+Save the toggle state into the same config system your bot uses (or into Replit DB if none exists).
+
+
+
+3. Moderation Settings Page
+
+Show and allow editing: welcome message, leave message, auto‐mod settings, log channel.
+
+For each server the user selects (from the guild list) show server‐specific settings.
+
+Changes should write back into your bot’s config/storage.
+
+
+
+4. Server Management Page
+
+For selected server: list text & voice channels; list roles.
+
+Allow changing settings: default prefix (if your bot uses), welcome channel, log channel, mute role.
+
+These changes should integrate with your bot’s logic.
+
+
+
+5. User/Logout Page
+
+Show logged-in user details, logout button clearing the session.
+
+
+
+
+API Endpoints
+
+/api/stats → returns bot stats (servers, users, uptime) from your bot.
+
+/api/settings → GET & POST server settings for moderation.
+
+/api/commands → GET & POST command enable/disable states.
+
+/api/servers → GET list of servers the bot is in + that the user can manage.
+
+
+Integration Details
+
+Project: SkillSparkHub on Replit.
+
+Bot already exists; do not overwrite its core logic.
+
+Dashboard files should be added in the project:
+
+/dashboard/main.py           # the Flask + OAuth2 + threading run file  
+/dashboard/templates/*.html  # home.html, commands.html, moderation.html, servers.html, user.html, login.html  
+/dashboard/static/style.css  
+/dashboard/api.py            # handles the API endpoints
+
+In your bot's main file (existing file), import or reference the Flask app thread so they run simultaneously (using threading.Thread).
+
+Use Replit DB or your bot’s existing config storage for persistent settings.
+
+UI: modern, clean, inspired by ProBot’s aesthetic.
+
+
+Final Instruction
+
+Generate the full runnable project code for this dashboard, with all the files and contents. Make sure it integrates with the existing bot in the “SkillSparkHub” project on Replit, and that it will work when you run it.

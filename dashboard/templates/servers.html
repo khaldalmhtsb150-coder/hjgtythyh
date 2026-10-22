@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servers - SkillSparkHub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>SkillSparkHub</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="{{ url_for('home') }}">🏠 Home</a></li>
+            <li><a href="{{ url_for('commands') }}">⚙️ Commands</a></li>
+            <li><a href="{{ url_for('moderation') }}">🛡️ Moderation</a></li>
+            <li class="active"><a href="{{ url_for('servers') }}">🌐 Servers</a></li>
+            <li><a href="{{ url_for('user_page') }}">👤 Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>Server Management</h1>
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="user-avatar">
+                <span>{{ user.username }}</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="servers-grid">
+                {% for guild in guilds %}
+                <div class="server-card">
+                    {% if guild.icon %}
+                    <img src="https://cdn.discordapp.com/icons/{{ guild.id }}/{{ guild.icon }}.png" alt="{{ guild.name }}" class="server-icon">
+                    {% else %}
+                    <div class="server-icon-placeholder">{{ guild.name[0] }}</div>
+                    {% endif %}
+                    <h3>{{ guild.name }}</h3>
+                    <p class="server-id">ID: {{ guild.id }}</p>
+                    <a href="{{ url_for('server_detail', guild_id=guild.id) }}" class="server-manage-btn">Manage Server</a>
+                </div>
+                {% else %}
+                <div class="empty-state">
+                    <h3>No Servers Found</h3>
+                    <p>You don't have manage permissions in any servers where the bot is present.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

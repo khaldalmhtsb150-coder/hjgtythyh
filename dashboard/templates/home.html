@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SkillSparkHub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>SkillSparkHub</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="active"><a href="{{ url_for('home') }}">🏠 Home</a></li>
+            <li><a href="{{ url_for('commands') }}">⚙️ Commands</a></li>
+            <li><a href="{{ url_for('moderation') }}">🛡️ Moderation</a></li>
+            <li><a href="{{ url_for('servers') }}">🌐 Servers</a></li>
+            <li><a href="{{ url_for('user_page') }}">👤 Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="user-avatar">
+                <span>{{ user.username }}</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🌐</div>
+                    <div class="stat-info">
+                        <h3>Servers</h3>
+                        <p class="stat-value">{{ stats.server_count }}</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p class="stat-value">{{ stats.user_count }}</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">{{ '✅' if stats.status == 'Online' else '❌' }}</div>
+                    <div class="stat-info">
+                        <h3>Bot Status</h3>
+                        <p class="stat-value">{{ stats.status }}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bot-info-card">
+                <div class="bot-info-header">
+                    {% if bot_info %}
+                    <img src="https://cdn.discordapp.com/avatars/{{ bot_info.id }}/{{ bot_info.avatar }}.png" alt="{{ bot_info.username }}" class="bot-avatar">
+                    <div>
+                        <h2>{{ bot_info.username }}#{{ bot_info.discriminator }}</h2>
+                        <p class="bot-id">ID: {{ bot_info.id }}</p>
+                    </div>
+                    {% else %}
+                    <div>
+                        <h2>SkillSparkHub Bot</h2>
+                        <p class="bot-id">Bot information unavailable</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="welcome-message">
+                <h2>Welcome to SkillSparkHub Dashboard</h2>
+                <p>Manage your Discord bot settings, commands, and moderation tools from this central dashboard.</p>
+                <div class="quick-links">
+                    <a href="{{ url_for('commands') }}" class="quick-link-btn">Manage Commands</a>
+                    <a href="{{ url_for('moderation') }}" class="quick-link-btn">Configure Moderation</a>
+                    <a href="{{ url_for('servers') }}" class="quick-link-btn">View Servers</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

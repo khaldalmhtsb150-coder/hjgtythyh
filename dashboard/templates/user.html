@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SkillSparkHub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>SkillSparkHub</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="{{ url_for('home') }}">🏠 Home</a></li>
+            <li><a href="{{ url_for('commands') }}">⚙️ Commands</a></li>
+            <li><a href="{{ url_for('moderation') }}">🛡️ Moderation</a></li>
+            <li><a href="{{ url_for('servers') }}">🌐 Servers</a></li>
+            <li class="active"><a href="{{ url_for('user_page') }}">👤 Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>User Profile</h1>
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="user-avatar">
+                <span>{{ user.username }}</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="profile-avatar">
+                    <div class="profile-info">
+                        <h2>{{ user.username }}#{{ user.discriminator }}</h2>
+                        <p class="profile-id">User ID: {{ user.id }}</p>
+                    </div>
+                </div>
+                
+                <div class="profile-actions">
+                    <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

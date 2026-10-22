@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderation - SkillSparkHub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>SkillSparkHub</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="{{ url_for('home') }}">🏠 Home</a></li>
+            <li><a href="{{ url_for('commands') }}">⚙️ Commands</a></li>
+            <li class="active"><a href="{{ url_for('moderation') }}">🛡️ Moderation</a></li>
+            <li><a href="{{ url_for('servers') }}">🌐 Servers</a></li>
+            <li><a href="{{ url_for('user_page') }}">👤 Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>Moderation Settings</h1>
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="user-avatar">
+                <span>{{ user.username }}</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="server-selector">
+                <label for="server-select">Select Server:</label>
+                <select id="server-select" class="server-dropdown">
+                    <option value="">-- Select a server --</option>
+                    {% for guild in guilds %}
+                    <option value="{{ guild.id }}">{{ guild.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div id="settings-container" class="settings-container" style="display: none;">
+                <div class="settings-section">
+                    <h3>Greeting Settings</h3>
+                    <div class="setting-item">
+                        <label>Enable Greetings</label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="greeting-enabled">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label for="greeting-channel">Greeting Channel ID</label>
+                        <input type="text" id="greeting-channel" class="setting-input" placeholder="Channel ID">
+                    </div>
+                    <div class="setting-item">
+                        <label for="greeting-message">Greeting Message</label>
+                        <textarea id="greeting-message" class="setting-textarea" placeholder="Use {user}, {username}, {server}"></textarea>
+                    </div>
+                    <div class="setting-item">
+                        <label for="greeting-duration">Duration (seconds)</label>
+                        <input type="number" id="greeting-duration" class="setting-input" placeholder="0 = permanent">
+                    </div>
+                    <button class="save-btn" onclick="saveGreetingSettings()">Save Greeting Settings</button>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Auto Line Settings</h3>
+                    <div class="setting-item">
+                        <label>Enable Auto Line</label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="autoline-enabled">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label for="autoline-image">Image URL</label>
+                        <input type="text" id="autoline-image" class="setting-input" placeholder="https://...">
+                    </div>
+                    <button class="save-btn" onclick="saveAutoLineSettings()">Save Auto Line Settings</button>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Feedback System</h3>
+                    <div class="setting-item">
+                        <label>Enable Feedback</label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="feedback-enabled">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <button class="save-btn" onclick="saveFeedbackSettings()">Save Feedback Settings</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        let currentGuildId = null;
+        const serverSelect = document.getElementById('server-select');
+        const settingsContainer = document.getElementById('settings-container');
+        
+        serverSelect.addEventListener('change', async function() {
+            const guildId = this.value;
+            if (!guildId) {
+                settingsContainer.style.display = 'none';
+                return;
+            }
+            
+            currentGuildId = guildId;
+            await loadSettings(guildId);
+            settingsContainer.style.display = 'block';
+        });
+        
+        async function loadSettings(guildId) {
+            try {
+                const response = await fetch(`/api/settings/${guildId}`);
+                const data = await response.json();
+                
+                document.getElementById('greeting-enabled').checked = data.greeting?.enabled || false;
+                document.getElementById('greeting-channel').value = data.greeting?.channelId || '';
+                document.getElementById('greeting-message').value = data.greeting?.message || '';
+                document.getElementById('greeting-duration').value = data.greeting?.duration || 0;
+                
+                document.getElementById('autoline-enabled').checked = data.autoline?.enabled || false;
+                document.getElementById('autoline-image').value = data.autoline?.imageUrl || '';
+                
+                document.getElementById('feedback-enabled').checked = data.feedback?.enabled || false;
+            } catch (error) {
+                console.error('Error loading settings:', error);
+            }
+        }
+        
+        async function saveGreetingSettings() {
+            if (!currentGuildId) return;
+            
+            const data = {
+                type: 'greeting',
+                enabled: document.getElementById('greeting-enabled').checked,
+                channelId: document.getElementById('greeting-channel').value,
+                message: document.getElementById('greeting-message').value,
+                duration: parseInt(document.getElementById('greeting-duration').value) || 0
+            };
+            
+            try {
+                const response = await fetch(`/api/settings/${currentGuildId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    alert('Greeting settings saved successfully!');
+                }
+            } catch (error) {
+                console.error('Error saving settings:', error);
+                alert('Error saving settings');
+            }
+        }
+        
+        async function saveAutoLineSettings() {
+            if (!currentGuildId) return;
+            
+            const data = {
+                type: 'autoline',
+                enabled: document.getElementById('autoline-enabled').checked,
+                imageUrl: document.getElementById('autoline-image').value,
+                channels: []
+            };
+            
+            try {
+                const response = await fetch(`/api/settings/${currentGuildId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    alert('Auto Line settings saved successfully!');
+                }
+            } catch (error) {
+                console.error('Error saving settings:', error);
+                alert('Error saving settings');
+            }
+        }
+        
+        async function saveFeedbackSettings() {
+            if (!currentGuildId) return;
+            
+            const data = {
+                type: 'feedback',
+                enabled: document.getElementById('feedback-enabled').checked,
+                channels: [],
+                emojis: ['👍', '👎']
+            };
+            
+            try {
+                const response = await fetch(`/api/settings/${currentGuildId}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    alert('Feedback settings saved successfully!');
+                }
+            } catch (error) {
+                console.error('Error saving settings:', error);
+                alert('Error saving settings');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - SkillSparkHub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>SkillSparkHub</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="{{ url_for('home') }}">🏠 Home</a></li>
+            <li class="active"><a href="{{ url_for('commands') }}">⚙️ Commands</a></li>
+            <li><a href="{{ url_for('moderation') }}">🛡️ Moderation</a></li>
+            <li><a href="{{ url_for('servers') }}">🌐 Servers</a></li>
+            <li><a href="{{ url_for('user_page') }}">👤 Profile</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>Command Management</h1>
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/{{ user.id }}/{{ user.avatar }}.png" alt="{{ user.username }}" class="user-avatar">
+                <span>{{ user.username }}</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="server-selector">
+                <label for="server-select">Select Server:</label>
+                <select id="server-select" class="server-dropdown">
+                    <option value="">-- Select a server --</option>
+                    {% for guild in guilds %}
+                    <option value="{{ guild.id }}">{{ guild.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div id="commands-container" class="commands-container" style="display: none;">
+                {% for category, commands in command_categories.items() %}
+                <div class="command-category">
+                    <h3>{{ category.title() }} Commands</h3>
+                    <div class="command-list">
+                        {% for command in commands %}
+                        <div class="command-item">
+                            <span class="command-name">{{ command }}</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" class="command-toggle" data-command="{{ command }}" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        const serverSelect = document.getElementById('server-select');
+        const commandsContainer = document.getElementById('commands-container');
+        let currentGuildId = null;
+        
+        serverSelect.addEventListener('change', async function() {
+            const guildId = this.value;
+            if (!guildId) {
+                commandsContainer.style.display = 'none';
+                return;
+            }
+            
+            currentGuildId = guildId;
+            
+            try {
+                const response = await fetch(`/api/commands/${guildId}`);
+                const disabledCommands = await response.json();
+                
+                document.querySelectorAll('.command-toggle').forEach(toggle => {
+                    const commandName = toggle.dataset.command;
+                    toggle.checked = !disabledCommands.includes(commandName);
+                });
+                
+                commandsContainer.style.display = 'block';
+            } catch (error) {
+                console.error('Error loading commands:', error);
+            }
+        });
+        
+        document.querySelectorAll('.command-toggle').forEach(toggle => {
+            toggle.addEventListener('change', async function() {
+                if (!currentGuildId) return;
+                
+                const commandName = this.dataset.command;
+                const enabled = this.checked;
+                
+                try {
+                    const response = await fetch(`/api/commands/${currentGuildId}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            command: commandName,
+                            enabled: enabled
+                        })
+                    });
+                    
+                    if (response.ok) {
+                        console.log(`Command ${commandName} ${enabled ? 'enabled' : 'disabled'}`);
+                    }
+                } catch (error) {
+                    console.error('Error toggling command:', error);
+                    this.checked = !enabled;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
