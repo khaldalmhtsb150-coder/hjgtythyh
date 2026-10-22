@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marka Bot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="bot-info">
+                    <img id="botAvatar" class="bot-avatar" src="" alt="Bot Avatar">
+                    <div>
+                        <h1 id="botName">Marka Bot</h1>
+                        <p class="subtitle">Discord Bot Dashboard</p>
+                    </div>
+                </div>
+                <div class="status-badge" id="statusBadge">
+                    <span class="status-dot"></span>
+                    <span>Online</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🖥️</div>
+                <div class="stat-content">
+                    <div class="stat-label">Servers</div>
+                    <div class="stat-value" id="serverCount">-</div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-content">
+                    <div class="stat-label">Total Users</div>
+                    <div class="stat-value" id="userCount">-</div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-content">
+                    <div class="stat-label">Commands</div>
+                    <div class="stat-value" id="commandCount">-</div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">📡</div>
+                <div class="stat-content">
+                    <div class="stat-label">Ping</div>
+                    <div class="stat-value" id="ping">-</div>
+                </div>
+            </div>
+            
+            <div class="stat-card uptime-card">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-content">
+                    <div class="stat-label">Uptime</div>
+                    <div class="stat-value" id="uptime">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>🎉 Active Giveaways</h2>
+                    <span class="badge" id="giveawayBadge">0</span>
+                </div>
+                <div class="card-content">
+                    <div id="giveawaysList" class="list-container">
+                        <div class="empty-state">No active giveaways</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>🖥️ Servers</h2>
+                    <span class="badge" id="serverBadge">0</span>
+                </div>
+                <div class="card-content">
+                    <div id="serversList" class="list-container">
+                        <div class="loading">Loading servers...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Marka Bot Dashboard • Last updated: <span id="lastUpdate">Never</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

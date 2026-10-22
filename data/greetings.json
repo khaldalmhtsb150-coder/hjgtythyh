@@ -1,0 +1,46 @@
+{
+  "1396140909279580331": {
+    "enabled": true,
+    "channelId": "1396140910290665534",
+    "message": "مرحبا بك {user}",
+    "duration": 0
+  },
+  "1426918254538129421": {
+    "channelId": "1434639173083594942",
+    "message": "مليون كريدت .!! {user} 🎉"
+  },
+  "1400028391746572318": {
+    "enabled": true,
+    "channelId": "1433841261651038418",
+    "message": "welcome to our server {user}",
+    "duration": 5
+  },
+  "1430958308449194067": {
+    "channelId": "1432739468871209191",
+    "message": "حط رياكشن {user}",
+    "duration": 5,
+    "enabled": true
+  },
+  "1422609253000024077": {
+    "channelId": "1437841308017234113",
+    "message": "نورت السيرفر 🩵 @اسم المستخدم"
+  },
+  "1420873684163498120": {
+    "enabled": true,
+    "channelId": "1426185451005542490",
+    "message": "شيك فوق حرق ملايين",
+    "duration": 0
+  },
+  "1436305366257238107": {
+    "enabled": true,
+    "channelId": null,
+    "message": "أهلاً {user} في {server}!",
+    "duration": 0
+  },
+  "804307517722066974": {
+    "enabled": true,
+    "channelId": "1562510105344475327",
+    "message": "{user} لحق حط رياكشن 🎉",
+    "duration": 5
+  }
+}

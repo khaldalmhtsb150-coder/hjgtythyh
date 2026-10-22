@@ -1,0 +1,1239 @@
+[
+  {
+    "messageId": "1435677165445320867",
+    "channelId": "1396140910290665534",
+    "guildId": "1396140909279580331",
+    "prize": "2m",
+    "winnersCount": 2,
+    "endTime": 1762362524683,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1435681443652042844",
+    "channelId": "1433841643924226199",
+    "guildId": "1400028391746572318",
+    "prize": "100m",
+    "winnersCount": 1,
+    "endTime": 1762363649722,
+    "hostId": "1400027837238345730",
+    "ended": true,
+    "winners": [
+      "1400027837238345730"
+    ]
+  },
+  {
+    "messageId": "1435706963827888351",
+    "channelId": "1433841643924226199",
+    "guildId": "1400028391746572318",
+    "prize": "100",
+    "winnersCount": 1,
+    "endTime": 1762369674096,
+    "hostId": "1400027837238345730",
+    "ended": false
+  },
+  {
+    "messageId": "1435707036745732287",
+    "channelId": "1396140910290665534",
+    "guildId": "1396140909279580331",
+    "prize": "100",
+    "winnersCount": 1,
+    "endTime": 1762369691437,
+    "hostId": "1400027837238345730",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1435708261159403612",
+    "channelId": "1396140910290665534",
+    "guildId": "1396140909279580331",
+    "prize": "2m",
+    "winnersCount": 2,
+    "endTime": 1762370042923,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1435709399111958579",
+    "channelId": "1396140910290665534",
+    "guildId": "1396140909279580331",
+    "prize": "100",
+    "winnersCount": 1,
+    "endTime": 1762370254690,
+    "hostId": "1400027837238345730",
+    "ended": true,
+    "winners": [
+      "1400027837238345730"
+    ]
+  },
+  {
+    "messageId": "1435712470449782845",
+    "channelId": "1433841261651038418",
+    "guildId": "1400028391746572318",
+    "prize": "100m",
+    "winnersCount": 10,
+    "endTime": 1762802926985,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1435867089536553024",
+    "channelId": "1406799140578398248",
+    "guildId": "1400800463288406076",
+    "prize": "2w",
+    "winnersCount": 100,
+    "endTime": 1762408091056,
+    "hostId": "1175354150507270195",
+    "ended": false
+  },
+  {
+    "messageId": "1435905271028252763",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "20m",
+    "winnersCount": 2,
+    "endTime": 1762416909194,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1435915840741445652",
+    "channelId": "1435902697294532700",
+    "guildId": "1435902696564457577",
+    "prize": "20m",
+    "winnersCount": 2,
+    "endTime": 1762419429251,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1435976834486632479",
+    "channelId": "1434198903468589220",
+    "guildId": "1434198902617407668",
+    "prize": "n-gaming",
+    "winnersCount": 3,
+    "endTime": 1767617955922,
+    "hostId": "135475849163046912",
+    "ended": false
+  },
+  {
+    "messageId": "1435994208409485313",
+    "channelId": "1427398748555972739",
+    "guildId": "1426918254538129421",
+    "prize": "10",
+    "winnersCount": 1,
+    "endTime": 1762438158612,
+    "hostId": "1111968711138627688",
+    "ended": false
+  },
+  {
+    "messageId": "1435994274679226469",
+    "channelId": "1428720643695706274",
+    "guildId": "1426918254538129421",
+    "prize": "10",
+    "winnersCount": 1,
+    "endTime": 1762438174332,
+    "hostId": "1111968711138627688",
+    "ended": false
+  },
+  {
+    "messageId": "1436005192993607750",
+    "channelId": "1434408131303309403",
+    "guildId": "1400028391746572318",
+    "prize": "2w",
+    "winnersCount": 2,
+    "endTime": 1762440732459,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1330490299532968071"
+    ]
+  },
+  {
+    "messageId": "1436006691987656816",
+    "channelId": "1422622941539205250",
+    "guildId": "1421929565911126171",
+    "prize": "20000c",
+    "winnersCount": 1,
+    "endTime": 1762448274409,
+    "hostId": "1431342794479239211",
+    "ended": false
+  },
+  {
+    "messageId": "1436014980875943946",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "2w",
+    "winnersCount": 2,
+    "endTime": 1762443066073,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436049385086521426",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "125k",
+    "winnersCount": 1,
+    "endTime": 1762451373682,
+    "hostId": "1111968711138627688",
+    "ended": true,
+    "winners": [
+      "1155167596233105419"
+    ]
+  },
+  {
+    "messageId": "1436050114622918796",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "125k",
+    "winnersCount": 1,
+    "endTime": 1762451607626,
+    "hostId": "1111968711138627688",
+    "ended": true,
+    "winners": [
+      "816396068195532851"
+    ]
+  },
+  {
+    "messageId": "1436051120857546762",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "350,000",
+    "winnersCount": 1,
+    "endTime": 1762451787507,
+    "hostId": "1111968711138627688",
+    "ended": true,
+    "winners": [
+      "1403050858001858631"
+    ]
+  },
+  {
+    "messageId": "1436054117176049667",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "250,000",
+    "winnersCount": 1,
+    "endTime": 1762452561997,
+    "hostId": "1111968711138627688",
+    "ended": true,
+    "winners": [
+      "1097979455248547930"
+    ]
+  },
+  {
+    "messageId": "1436055597643726950",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "500,000",
+    "winnersCount": 1,
+    "endTime": 1762452914815,
+    "hostId": "1111968711138627688",
+    "ended": true,
+    "winners": [
+      "1254863484869546097"
+    ]
+  },
+  {
+    "messageId": "1436066346445045910",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "150k",
+    "winnersCount": 1,
+    "endTime": 1762455417577,
+    "hostId": "1111968711138627688",
+    "ended": true,
+    "winners": [
+      "1416370935732375595"
+    ]
+  },
+  {
+    "messageId": "1436067302100697241",
+    "channelId": "1434244023249277090",
+    "guildId": "1426918254538129421",
+    "prize": "300,000",
+    "winnersCount": 2,
+    "endTime": 1762455705462,
+    "hostId": "1111968711138627688",
+    "ended": false
+  },
+  {
+    "messageId": "1436069547491852309",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "1b",
+    "winnersCount": 1,
+    "endTime": 1762456061799,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1436088100236427375",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "20m",
+    "winnersCount": 2,
+    "endTime": 1762460498763,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436088242809344020",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "2m",
+    "winnersCount": 2,
+    "endTime": 1762460533110,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436088478109532183",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "20m",
+    "winnersCount": 2,
+    "endTime": 1762460589255,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436091080775827496",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "2w",
+    "winnersCount": 2,
+    "endTime": 1762461209709,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1436091307251732574",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1762461368691,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1436263723613425664",
+    "channelId": "1436263372550176789",
+    "guildId": "1430592742236491819",
+    "prize": "10000",
+    "winnersCount": 1,
+    "endTime": 1762588755548,
+    "hostId": "1277920194043318383",
+    "ended": false
+  },
+  {
+    "messageId": "1436264126149296219",
+    "channelId": "1436263372550176789",
+    "guildId": "1430592742236491819",
+    "prize": "10000",
+    "winnersCount": 1,
+    "endTime": 1762588851465,
+    "hostId": "1277920194043318383",
+    "ended": false
+  },
+  {
+    "messageId": "1436301715899944971",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "100",
+    "winnersCount": 1,
+    "endTime": 1762511473928,
+    "hostId": "1400027837238345730",
+    "ended": false
+  },
+  {
+    "messageId": "1436303453730242683",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "20m",
+    "winnersCount": 2,
+    "endTime": 1762511843366,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436305479478542346",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "100",
+    "winnersCount": 1,
+    "endTime": 1762512371325,
+    "hostId": "1400027837238345730",
+    "ended": false
+  },
+  {
+    "messageId": "1436389174231040084",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "qpp",
+    "winnersCount": 1,
+    "endTime": 1762532325701,
+    "hostId": "1400027837238345730",
+    "ended": false
+  },
+  {
+    "messageId": "1436693809269444720",
+    "channelId": "1434215715287597127",
+    "guildId": "1400028391746572318",
+    "prize": "5m",
+    "winnersCount": 1,
+    "endTime": 1762604905965,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1436699940461088822",
+    "channelId": "1430959084605149305",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762606598143,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436700168404598908",
+    "channelId": "1430959084605149305",
+    "guildId": "1430958308449194067",
+    "prize": "2w",
+    "winnersCount": 2,
+    "endTime": 1762606427510,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1436700213531246702",
+    "channelId": "1430959038174068819",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762606663264,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1423263990758248448"
+    ]
+  },
+  {
+    "messageId": "1436701458807390400",
+    "channelId": "1430959038174068819",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762606900175,
+    "hostId": "1315006849900220459",
+    "ended": true,
+    "winners": [
+      "1366076867232141332"
+    ]
+  },
+  {
+    "messageId": "1436702858681647256",
+    "channelId": "1430959038174068819",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762607293722,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1421174128395812944"
+    ]
+  },
+  {
+    "messageId": "1436704887030415564",
+    "channelId": "1430959091605442641",
+    "guildId": "1430958308449194067",
+    "prize": "20pk",
+    "winnersCount": 1,
+    "endTime": 1762607552496,
+    "hostId": "1216998521841127455",
+    "ended": true,
+    "winners": [
+      "1084786241167429672"
+    ]
+  },
+  {
+    "messageId": "1436704892172632237",
+    "channelId": "1430959084605149305",
+    "guildId": "1430958308449194067",
+    "prize": "1",
+    "winnersCount": 1,
+    "endTime": 1762607548758,
+    "hostId": "1153065730955300895",
+    "ended": false
+  },
+  {
+    "messageId": "1436705786226278502",
+    "channelId": "1430959038174068819",
+    "guildId": "1430958308449194067",
+    "prize": "1m @here",
+    "winnersCount": 1,
+    "endTime": 1762607991887,
+    "hostId": "1390347430897385554",
+    "ended": true,
+    "winners": [
+      "1058375625641033779"
+    ]
+  },
+  {
+    "messageId": "1436709006260441108",
+    "channelId": "1430959038174068819",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762608639592,
+    "hostId": "1390347430897385554",
+    "ended": true,
+    "winners": [
+      "1421621810926977134"
+    ]
+  },
+  {
+    "messageId": "1436709790305878027",
+    "channelId": "1430959038174068819",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762608826655,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1360606087761367351"
+    ]
+  },
+  {
+    "messageId": "1436723397290889277",
+    "channelId": "1425148347353661510",
+    "guildId": "1391686288213671936",
+    "prize": "20m",
+    "winnersCount": 1,
+    "endTime": 1762611965735,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1437113694633988116",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "200k",
+    "winnersCount": 1,
+    "endTime": 1762706204760,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1368890435048706068"
+    ]
+  },
+  {
+    "messageId": "1437119457008029897",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762706498154,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1421163363936768101"
+    ]
+  },
+  {
+    "messageId": "1437120269289390153",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "200k",
+    "winnersCount": 1,
+    "endTime": 1762706812245,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1418470867247042652"
+    ]
+  },
+  {
+    "messageId": "1437121613895307405",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762706953064,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1421158708158660708"
+    ]
+  },
+  {
+    "messageId": "1437122000438165525",
+    "channelId": "1426185451005542490",
+    "guildId": "1420873684163498120",
+    "prize": "10m",
+    "winnersCount": 1,
+    "endTime": 1762707585066,
+    "hostId": "1287119225235832955",
+    "ended": false
+  },
+  {
+    "messageId": "1437122178574188824",
+    "channelId": "1426185451005542490",
+    "guildId": "1420873684163498120",
+    "prize": "30s",
+    "winnersCount": 1,
+    "endTime": 1762707087590,
+    "hostId": "1287119225235832955",
+    "ended": false
+  },
+  {
+    "messageId": "1437123239087312979",
+    "channelId": "1426185451005542490",
+    "guildId": "1420873684163498120",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1762707340466,
+    "hostId": "1287119225235832955",
+    "ended": false
+  },
+  {
+    "messageId": "1437123808862404639",
+    "channelId": "1426185451005542490",
+    "guildId": "1420873684163498120",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1762707475880,
+    "hostId": "1287119225235832955",
+    "ended": false
+  },
+  {
+    "messageId": "1437123828827422782",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1762707661119,
+    "hostId": "1400027837238345730",
+    "ended": true,
+    "winners": [
+      "1330594004731035746"
+    ]
+  },
+  {
+    "messageId": "1437124073657466973",
+    "channelId": "1426185451005542490",
+    "guildId": "1420873684163498120",
+    "prize": "10m",
+    "winnersCount": 1,
+    "endTime": 1762707539272,
+    "hostId": "1287119225235832955",
+    "ended": true,
+    "winners": [
+      "1287119225235832955"
+    ]
+  },
+  {
+    "messageId": "1437125257562558487",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "200k",
+    "winnersCount": 2,
+    "endTime": 1762707941650,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1422774512377794560",
+      "1423943357641658382"
+    ]
+  },
+  {
+    "messageId": "1437126267903283222",
+    "channelId": "1437113468904804516",
+    "guildId": "1430958308449194067",
+    "prize": "200k",
+    "winnersCount": 2,
+    "endTime": 1762708182521,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1315006849900220459",
+      "1350055271975747646"
+    ]
+  },
+  {
+    "messageId": "1437466086097555530",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "200k",
+    "winnersCount": 1,
+    "endTime": 1762790221614,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392523176549810196"
+    ]
+  },
+  {
+    "messageId": "1437472287568822272",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 2,
+    "endTime": 1762790680073,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1423832682642673814",
+      "1426818778875957299"
+    ]
+  },
+  {
+    "messageId": "1437499990527447053",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762797405011,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1437501876043124880",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762797674438,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1421163363936768101"
+    ]
+  },
+  {
+    "messageId": "1437502968701386793",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762798055003,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1410275902452924578"
+    ]
+  },
+  {
+    "messageId": "1437506934411362436",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "50k",
+    "winnersCount": 1,
+    "endTime": 1762798775505,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "858411162423787600"
+    ]
+  },
+  {
+    "messageId": "1437506940573061243",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "50k",
+    "winnersCount": 1,
+    "endTime": 1762798776968,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1228625580229005377"
+    ]
+  },
+  {
+    "messageId": "1437506952048414932",
+    "channelId": "1437465148791984241",
+    "guildId": "1430958308449194067",
+    "prize": "50k",
+    "winnersCount": 1,
+    "endTime": 1762798779673,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1293205664889442397"
+    ]
+  },
+  {
+    "messageId": "1437823586789363772",
+    "channelId": "1432739468871209191",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762874856320,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1422750427895824384"
+    ]
+  },
+  {
+    "messageId": "1437826594579288125",
+    "channelId": "1432739468871209191",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762875093463,
+    "hostId": "1315006849900220459",
+    "ended": true,
+    "winners": [
+      "1357261845286883372"
+    ]
+  },
+  {
+    "messageId": "1437827333238296608",
+    "channelId": "1432739468871209191",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762875269537,
+    "hostId": "1315006849900220459",
+    "ended": true,
+    "winners": [
+      "1421486790467915796"
+    ]
+  },
+  {
+    "messageId": "1437830169376325705",
+    "channelId": "1432739468871209191",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762875945763,
+    "hostId": "1315006849900220459",
+    "ended": true,
+    "winners": [
+      "1089631425537515600"
+    ]
+  },
+  {
+    "messageId": "1437833008466886778",
+    "channelId": "1432739468871209191",
+    "guildId": "1430958308449194067",
+    "prize": "100k",
+    "winnersCount": 1,
+    "endTime": 1762876682683,
+    "hostId": "1315006849900220459",
+    "ended": true,
+    "winners": [
+      "1422733178640142472"
+    ]
+  },
+  {
+    "messageId": "1437835600118939648",
+    "channelId": "1430959124027543603",
+    "guildId": "1430958308449194067",
+    "prize": "1m",
+    "winnersCount": 2,
+    "endTime": 1763741120496,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1437879474908692682",
+    "channelId": "1433841261651038418",
+    "guildId": "1400028391746572318",
+    "prize": "nitro G prime marka",
+    "winnersCount": 3,
+    "endTime": 1763146781113,
+    "hostId": "1400027837238345730",
+    "ended": false
+  },
+  {
+    "messageId": "1438964539482701906",
+    "channelId": "1438963902653399070",
+    "guildId": "1248649546142187540",
+    "prize": "100k",
+    "winnersCount": 2,
+    "endTime": 1763146460206,
+    "hostId": "1083060294760288308",
+    "ended": true,
+    "winners": [
+      "1333155487029661707",
+      "797472951389126676"
+    ]
+  },
+  {
+    "messageId": "1439640980465782796",
+    "channelId": "1433841261651038418",
+    "guildId": "1400028391746572318",
+    "prize": "10nitroG",
+    "winnersCount": 10,
+    "endTime": 1763566756789,
+    "hostId": "1400027837238345730",
+    "ended": false
+  },
+  {
+    "messageId": "1557333288287477761",
+    "channelId": "1460704044442976258",
+    "guildId": "1460704043759435929",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1791367604525,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1557333514033168418",
+    "channelId": "1460704044442976258",
+    "guildId": "1460704043759435929",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1791367658456,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1557376649530581113",
+    "channelId": "1460704044442976258",
+    "guildId": "1460704043759435929",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1791377942352,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1557378309036310655",
+    "channelId": "1460704044442976258",
+    "guildId": "1460704043759435929",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1791378338264,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1229657759717523487"
+    ]
+  },
+  {
+    "messageId": "1557379837914652785",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "10m",
+    "winnersCount": 1,
+    "endTime": 1791378702804,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1557380958108385453",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1791378969921,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1557382172183367842",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1791379259381,
+    "hostId": "1392792427051614249",
+    "ended": false
+  },
+  {
+    "messageId": "1557386560549167166",
+    "channelId": "1556359519561453698",
+    "guildId": "1460704043759435929",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1791380305654,
+    "hostId": "1392792427051614249",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1558182686412111915",
+    "channelId": "1460704044442976258",
+    "guildId": "1460704043759435929",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1791570116817,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1558182795480928437",
+    "channelId": "1558180566048968765",
+    "guildId": "804307517722066974",
+    "prize": "1b",
+    "winnersCount": 1,
+    "endTime": 1791570307796,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/80e393b4ecc30a43058ff565c8bd1035.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1312506579358322749"
+    ]
+  },
+  {
+    "messageId": "1558185288549802104",
+    "channelId": "1558180566048968765",
+    "guildId": "804307517722066974",
+    "prize": "3b",
+    "winnersCount": 3,
+    "endTime": 1791571021871,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/80e393b4ecc30a43058ff565c8bd1035.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1561090353145188412",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "1",
+    "winnersCount": 1,
+    "endTime": 1792263403553,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1229657759717523487"
+    ]
+  },
+  {
+    "messageId": "1561091938868924417",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1792263736612,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1561093094819106937",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1792264012281,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1561503042111545446",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1792361751332,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1562220820959334542",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "2m",
+    "winnersCount": 1,
+    "endTime": 1792532883116,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1562512864009265174",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1792602511578,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1562525398732902544",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1792605500180,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1392792427051614249"
+    ]
+  },
+  {
+    "messageId": "1562525627947548753",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "10",
+    "winnersCount": 1,
+    "endTime": 1792605599784,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1562526212725674111",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "10",
+    "winnersCount": 1,
+    "endTime": 1792605739251,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1562531952219918347",
+    "channelId": "1405149217789444100",
+    "guildId": "804307517722066974",
+    "prize": "1m",
+    "winnersCount": 1,
+    "endTime": 1792607062546,
+    "hostId": "1392792427051614249",
+    "hostName": "1.marka",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1392792427051614249/89771cf82e95fba61624581f9c6ae0af.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1562533418145677393",
+    "channelId": "1562510105344475327",
+    "guildId": "804307517722066974",
+    "prize": "1b",
+    "winnersCount": 1,
+    "endTime": 1792607577122,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": false
+  },
+  {
+    "messageId": "1562536810679111712",
+    "channelId": "1562510105344475327",
+    "guildId": "804307517722066974",
+    "prize": "100m",
+    "winnersCount": 1,
+    "endTime": 1792608265954,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1271473148587675671"
+    ]
+  },
+  {
+    "messageId": "1562541933346168916",
+    "channelId": "1562510105344475327",
+    "guildId": "804307517722066974",
+    "prize": "600m",
+    "winnersCount": 1,
+    "endTime": 1792609607149,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1486579820086427729"
+    ]
+  },
+  {
+    "messageId": "1562543410936684765",
+    "channelId": "1562510105344475327",
+    "guildId": "804307517722066974",
+    "prize": "nitroG",
+    "winnersCount": 1,
+    "endTime": 1792610019527,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": true,
+    "winners": [
+      "1441567870155882588"
+    ]
+  },
+  {
+    "messageId": "1562546124412293124",
+    "channelId": "1562510105344475327",
+    "guildId": "804307517722066974",
+    "prize": "5nitroG",
+    "winnersCount": 5,
+    "endTime": 1792696826444,
+    "hostId": "1229657759717523487",
+    "hostName": "iimpay",
+    "hostAvatarURL": "https://cdn.discordapp.com/avatars/1229657759717523487/1acae9fa330fe7984711679a5ddc05a6.webp?size=64",
+    "ended": false
+  }
+]
