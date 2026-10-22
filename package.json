@@ -1,0 +1,26 @@
+{
+  "name": "dealer-bot",
+  "version": "1.0.0",
+  "description": "A feature-rich Discord bot with giveaways, greetings, moderation, and owner management",
+  "main": "index.js",
+  "scripts": {
+    "start": "node launcher.js",
+    "bot": "node index.js",
+    "dashboard": "cd dashboard && python -m flask run --host=0.0.0.0 --port=5000",
+    "test": "node --test"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "giveaway",
+    "moderation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^3.2.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
